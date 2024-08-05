@@ -28,7 +28,7 @@ Here are the topics that will be covered in the six notebooks:
 
 ## Course Assignments
 
-There will be two assignments related directly to the presented notebooks. These assignment are presented as notebooks, and you are required to fill in the missing code to complete the notebook. More info will come later in the semester.
+There will be two assignments related directly to the presented notebooks. These assignment are presented as notebooks, and you are required to fill in the missing code to complete the notebook.
 
 ## Getting Help
 

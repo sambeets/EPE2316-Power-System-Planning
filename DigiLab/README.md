@@ -1,6 +1,8 @@
 # DigiLab Notebooks
 
-There will be in total of six Jupyter Notebooks presented and walked through in this course.
+There will be in total of six Jupyter Notebooks presented and walked through in this course with corresponding assignments.
+
+![DigiLab Overview](Notebook-overview.png)
 
 1. **Python Fundamentals, Part 1**: Introduction to basic Python syntax and programming concepts.
 2. **Python Fundamentals, Part 2**: Continued exploration of Python programming techniques.
@@ -11,7 +13,7 @@ There will be in total of six Jupyter Notebooks presented and walked through in 
 
 ## Required set up
 
-1. Open up [Google Colab](https://colab.research.google.com/github/) and enter the URL form this page: [EPE2316_PowerSystemPlanning](https://github.com/sambeets/EPE2316_PowerSystemAnalysis)
-2. Naviagte to the desired DigiLab notebook file (.ipynb) and click on it to open it up.
+1. Open up [Google Colab](https://colab.research.google.com/github/) and enter the URL form this page: [EPE2316-Power-System-Planning](https://github.com/sambeets/EPE2316-Power-System-Planning)
+2. Navigate  to the desired DigiLab notebook file (.ipynb) and click on it to open it up.
 3. Run the first cell to copy the Power System Planning github repo, and to install the necessary modules for the notebook.
 4. You are now ready to use Google Colab for power system simulations in Python.
