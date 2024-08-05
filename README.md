@@ -1,13 +1,22 @@
-# Welcome to EPE2316_Power System Analysis
+# Welcome to EPE2316 - Power System Planning
 
-### Main Teacher: Prof. Sambeet Mishra
-### Teaching Assistant: Emil Ghieh Melfald (PhD Research Fellow)
-#### Department of Electrical, IT and Cybernetics
-#### Campus: Porsgrunn, Norway
+## Main Teacher
+
+Prof. Sambeet Mishra
+
+## Teaching Assistants
+
+- Emil Ghieh Melfald (PhD Research Fellow)
+- Khaled Aleikish (PhD Research Fellow)
+- Sulabh Sachan (Post-doc)
+
+**Department of Electrical, IT and Cybernetics**
+**Campus: Porsgrunn, Norway**
 
 Welcome to the repository for the Electric Power System Masters course! This repository contains what you will need in order to learn about topics relevant to Assignment 1 and 2 in the course. In the folder **DigiLab** you will find six Jupyter Notebooks that will be utilized throughout the semester. These notebooks correspond to the lectures and are designed to enhance your understanding of the essential concepts in the course in a hands-on way.
 
 ## Topics Covered in the notebooks
+
 Here are the topics that will be covered in the six notebooks:
 
 1. **Python Fundamentals, Part 1**: Introduction to basic Python syntax and programming concepts.
@@ -18,7 +27,9 @@ Here are the topics that will be covered in the six notebooks:
 6. **Economic Dispatch**: Understanding how to economically dispatch energy in the grid.
 
 ## Course Assignments
+
 There will be two assignments related directly to the presented notebooks. These assignment are presented as notebooks, and you are required to fill in the missing code to complete the notebook. More info will come later in the semester.
 
 ## Getting Help
+
 If you encounter any issues or have questions regarding the notebooks, feel free to reach out to the instructor or TA, or create an issue in the GitHub repository.
