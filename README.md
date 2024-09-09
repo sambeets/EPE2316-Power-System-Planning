@@ -8,7 +8,7 @@ Prof. Sambeet Mishra
 
 - Emil Ghieh Melfald (PhD Research Fellow)
 - Khaled Aleikish (PhD Research Fellow)
-- Sulabh Sachan (Post-doc)
+- Sulabh Sachan (Post-doctoral research Fellow)
 
 **Department of Electrical, IT and Cybernetics**
 **Campus: Porsgrunn, Norway**
