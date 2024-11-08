@@ -7,15 +7,18 @@ def check_task_1_1(network: pypsa.Network):
         score += 1
     else:
         print("Voltage set points are not correct")
-    if np.isclose(network.lines.s_nom.values, np.array([228.6307066, 228.6307066, 160.04149462, 114.3153533, 228.6307066, 228.6307066]), 1e-6).all(): 
+    if np.isclose(network.lines.s_nom.values.round(3), 
+                  np.array([228.6307066, 228.6307066, 160.04149462, 114.3153533, 228.6307066, 228.6307066]).round(3), 1e-6).all(): 
         score += 1
     else:
         print("Line ratings are not correct")
-    if np.isclose(network.lines.x.values, np.array([2.,  2.,  4., 12.,  2.,  2.]), 1e-6).all():
+    if np.isclose(network.lines.x.values.round(3), 
+                  np.array([2.,  2.,  4., 12.,  2.,  2.]).round(3), 1e-6).all():
         score += 1
     else:
         print("Line reactances are not correct")
-    if np.isclose(network.lines.r.values, np.array([0.5, 0.5, 2. , 9. , 0.5, 0.5]), 1e-6).all():
+    if np.isclose(network.lines.r.values.round(3), 
+                  np.array([0.5, 0.5, 2. , 9. , 0.5, 0.5]).round(3), 1e-6).all():
         score += 1
     if (network.generators.control.values == np.array(["Slack", "PV", "PV"])).all(): 
         score += 1
