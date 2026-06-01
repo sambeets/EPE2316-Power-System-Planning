@@ -2,13 +2,14 @@
 
 ## Main Teacher
 
-Prof. Sambeet Mishra
+Sambeet Mishra
 
 ## Teaching Assistants
 
 - Emil Ghieh Melfald (PhD Research Fellow)
 - Khaled Aleikish (PhD Research Fellow)
 - Sulabh Sachan (Post-doctoral research Fellow)
+- Duy Tran (PhD research Fellow)
 
 **Department of Electrical, IT and Cybernetics**
 **Campus: Porsgrunn, Norway**
