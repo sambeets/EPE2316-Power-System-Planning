@@ -2,7 +2,7 @@
 
 There will be in total of six Jupyter Notebooks presented and walked through in this course with corresponding assignments.
 
-![DigiLab Overview](Notebook-overview.png)
+![DigiLab Overview](DigiLab_Updated_Structure.png)
 
 1. **Python Fundamentals, Part 1**: Introduction to basic Python syntax and programming concepts.
 2. **Python Fundamentals, Part 2**: Continued exploration of Python programming techniques.
