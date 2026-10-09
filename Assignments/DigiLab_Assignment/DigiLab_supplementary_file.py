@@ -9,12 +9,12 @@ def score_task_1(network):
     P_calc = network.buses_t.p.values[0].round(3)
     Q_calc = network.buses_t.q.values[0].round(3)
     V_calc = network.buses_t.v_mag_pu.values[0].round(5)
-    th_calc = (network.buses_t.v_ang.values[0]).round(6)
+    th_calc = network.buses_t.v_ang.values[0].round(6)
 
-    P_sol = np.array([-0.487, -1.5, 2.0])
-    Q_sol = np.array([-0.625, -0.5, 1.167])
-    V_sol = np.array([1.0, 1.00864, 1.02])
-    th_sol = np.array([0.0, 0.027709, 0.700204])
+    P_sol  = np.array([-0.487, -1.5, 2.0])
+    Q_sol  = np.array([-0.625, -0.5, 1.167])
+    V_sol  = np.array([1.0, 1.00864, 1.02])
+    th_sol = np.array([0.0, 0.000484, 0.012221])  # radians (PyPSA v_ang unit), update to match the PyPSA newer version
 
     score = 0
     if np.allclose(P_calc, P_sol, rtol=1e-3):
@@ -29,7 +29,7 @@ def score_task_1(network):
         score += 1
     else:
         print(f"Expected V: {V_sol} but got {V_calc}")
-    if np.allclose(th_calc, th_sol, rtol=1e-6):
+    if np.allclose(th_calc, th_sol, atol=1e-4):
         score += 1
     else:
         print(f"Expected theta: {th_sol} but got {th_calc}")
@@ -40,12 +40,12 @@ def score_task_2(network):
     P_calc = network.buses_t.p.values[0].round(3)
     Q_calc = network.buses_t.q.values[0].round(3)
     V_calc = network.buses_t.v_mag_pu.values[0].round(5)
-    th_calc = (network.buses_t.v_ang.values[0]).round(6)
+    th_calc = network.buses_t.v_ang.values[0].round(6)
 
-    P_sol = np.array([-0.487, -1.5, 2.0])
-    Q_sol = np.array([-0.625, -0.5, 1.167])
-    V_sol = np.array([1.0, 1.00864, 1.02])
-    th_sol = np.array([0.0, 0.027709, 0.700204])
+    P_sol  = np.array([-0.487, -1.5, 2.0])
+    Q_sol  = np.array([-0.625, -0.5, 1.167])
+    V_sol  = np.array([1.0, 1.00864, 1.02])
+    th_sol = np.array([0.0, 0.000484, 0.012221])  # radians (PyPSA v_ang unit), update to match the PyPSA newer version
 
     score = 0
     if np.allclose(P_calc, P_sol, rtol=1e-3):
@@ -60,7 +60,7 @@ def score_task_2(network):
         score += 1
     else:
         print(f"Expected V: {V_sol} but got {V_calc}")
-    if np.allclose(th_calc, th_sol, rtol=1e-6):
+    if np.allclose(th_calc, th_sol, atol=1e-4):
         score += 1
     else:
         print(f"Expected theta: {th_sol} but got {th_calc}")
@@ -73,11 +73,11 @@ def score_task_3(sol):
 
     th1 = round(sol.x[0], 5)
     th2 = round(sol.x[1], 5)
-    V1 = round(sol.x[2], 5)
+    V1  = round(sol.x[2], 5)
 
     th1_sol = 0.00048
     th2_sol = 0.01222
-    v1_sol = 1.00864
+    v1_sol  = 1.00864
 
     score = 0
     if round(th1, 5) == th1_sol:

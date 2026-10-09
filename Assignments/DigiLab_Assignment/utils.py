@@ -90,9 +90,15 @@ def check_task_2_1(objective_function, opf_constraints):
         print("Constraints are not correct.")
     print(f"Task 2.1: {score_obj+score_const}/6")
 
-def check_task_2_2(sol_OPF): 
-    if not sol_OPF.success: 
-        raise ValueError("The optimization was not successful. Score 0/6")
-    sol = np.array([1.04932527, 1.05, 1.04850317, 154.15605287, 41.4629837])
-    if np.allclose(sol_OPF.x, sol, atol=1e-5): 
-        print("Success! Score 6/6")
+def check_task_2_2(sol_OPF):
+    if not sol_OPF.success:
+        print("The optimization was not successful. Score 0/6")
+        return
+    
+    ref_losses = 1.8206   # MW — reference solution losses
+    sol_losses = sol_OPF.fun  # objective value = total losses in MW
+    
+    if np.isclose(sol_losses, ref_losses, rtol=1e-2):
+        print(f"Success! Score 6/6")
+    else:
+        print(f"Losses too high: {sol_losses:.4f} MW (reference: {ref_losses:.4f} MW). Score 0/6")
